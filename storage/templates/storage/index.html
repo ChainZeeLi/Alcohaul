@@ -1,0 +1,14 @@
+{% if all_alcohol %}	
+
+	<h3>Here are all alcohols</h3>
+
+	<ul>
+		{% for alcohol in all_alcohol %}
+		<li><a href="/storage/{{alcohol.name}}/">{{alcohol.name}}</a></li>
+		{% endfor %}
+	</ul>
+
+{% else %}
+	<h3>No alcohol on record</h3>
+{% endif %}
+
